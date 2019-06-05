@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+//屬性序列化 可以顯示在Unity屬性面板上
+[System.Serializable]
 public class Dog
 {
     #region 欄位
@@ -42,7 +44,7 @@ public class Dog
     /// </summary>
     /// <param name="food">食物</param>
     /// <param name="count">份量</param>
-    public void Eat(string food , int count)
+    public void Eat(string food, int count)
     {
         Debug.Log(name + " 正在吃" + food + " 份量" + count);
     }
