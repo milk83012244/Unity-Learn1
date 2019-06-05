@@ -3,9 +3,11 @@
 [System.Serializable]
 public class Soldier
 {
+    #region 欄位
     public int exp;
     public int lv;
-
+    #endregion
+    #region 方法
     /// <summary>
     /// 設定經驗值 計算經驗值為:等級 * 10
     /// </summary>
@@ -23,5 +25,6 @@ public class Soldier
     {
         exp = getExp;
     }
+    #endregion
 }
 
